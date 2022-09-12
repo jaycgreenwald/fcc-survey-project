@@ -34,28 +34,41 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label for="department" class="dropdown">Choose which department you are interested in.
+                <label for="department">Choose which department you are interested in.
                     <select name="department" id="dropdown">
-                        <option value="">Select a department</option>
-                        <option value="">Marketing</option>
-                        <option value="">Fundraising</option>
-                        <option value="">Operations</option>
-                        <option value="">IT</option>
+                        <option value="">
+                            Select a department
+                        </option>
+                        <option value="1">
+                            Marketing
+                        </option>
+                        <option value="2">
+                            Fundraising
+                        </option>
+                        <option value="3">
+                            Operations
+                        </option>
+                        <option value="4">
+                            IT
+                        </option>
                     </select>
                 </label>
-                <label for="weekend-no">Are you available to work weekends?
-                    <input type="radio" name="weekend-no" id="radio">Not Available Weekends
-                    <input type="radio" name="weekend-no" id="radio">Available Weekends
+                <p class="radios">Are you available to work on weekends?</p>
+                <label for="weekends-yes" class="weekend-label"><input type="radio" name="weekends" id="weekends-yes">Available weekends</label>
+                <label for="weekends-no" class="weekend-label"><input type="radio" name="weekends" id="weekends-no">Not available weekends</label>
+                <label for="experience" class="experience-label">Do you have experience in the following areas? (Check all that apply.)
+                    <div class="checkboxes">
+                        <input type="checkbox" name="" id="experience">Social media
+                        <input type="checkbox" name="" id="experience">Website
+                        <input type="checkbox" name="" id="experience">Accounting/Bookkeeping
+                        <input type="checkbox" name="" id="experience">Logistics
+                        <input type="checkbox" name="" id="experience">Oversight
+                    </div>
                 </label>
             </fieldset>
-            <fieldset>
-                <label for="">
-                    <input type="checkbox" name="" id="">Social media
-                    <input type="checkbox" name="" id="">Website
-                    <input type="checkbox" name="" id="">Accounting/Bookkeeping
-                    <input type="checkbox" name="" id="">Logistics
-                    <input type="checkbox" name="" id="">Oversight
-                </label>
+            <fieldset class="text-input">
+                <label for="comments"></label>Is there anything else you'd like us to know? Write it below.
+                <textarea name="" id="comments" cols="30" rows="10"></textarea>
             </fieldset>
 
             <input type="submit" value="Submit" id="submit">

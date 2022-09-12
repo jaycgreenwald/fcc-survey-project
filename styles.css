@@ -46,8 +46,9 @@ body {
     align-items: center;
     color: #f1f1f1;
     background-image: url(/images/hero.jpg);
-    background-repeat: no-repeat;
     background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
@@ -57,20 +58,26 @@ body {
     min-height: 100vh;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 .wrapper {
     background-color: rgb(33, 33, 87);
     border-radius: .5rem;
     min-width: 800px;
-    padding: 4rem 2rem;
+    max-width: 1000px;
+    padding: 2rem;
 }
 
 #title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     padding: 1rem 0;
 }
 
 #description {
+    font-size: 1.2rem;
     padding: 1rem 0 2rem 0;
 }
 
@@ -78,41 +85,86 @@ body {
 fieldset {
     border: 1px solid #525252;
     border-radius: .5rem;
+    padding: 2rem;
     margin: 0 0 1rem 0;
-    padding: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 1.1rem;
+    padding-bottom: 1.2rem;
 }
 
 input {
-    background-color:rgb(97, 97, 192);
-    border: 1px solid rgb(97, 97, 192);
+    background-color:rgb(236, 167, 120);
+    border: 1px solid rgb(236, 167, 120);
     border-radius: 4px;
     display: block;
-    margin: 0 0 1rem 0;
+    margin: .5rem 0 0 0;
     padding: 8px;
 }
 
+input[type="number"] {
+    margin: .5rem 0 0 0;
+}
+
+
 #name, #email {
-    /* margin-top: 1rem 0 2rem 0; */
     width: 100%;
 }
 
+#number-label {
+    padding-bottom: 0;
+}
+
+#dropdown {
+    display: block;
+    padding: 4px;
+    margin: .5rem 0 1rem 0;
+    background-color:rgb(236, 167, 120);
+    border: 1px solid rgb(236, 167, 120);
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    display: inline;
+    margin: 0 .5rem 0 0;
+}
+
+.radios {
+    margin: 0 0 .5rem 0;
+}
+
+.weekend-label {
+    padding: 0 0 1rem .8rem;
+}
 
 input[type="checkbox"] {
     display: inline;
     margin: 0 .5rem 0 1rem;
 }
 
-
-
-#dropdown {
-    display: block;
+input[type="checkbox"]:first-of-type {
+    margin-left: 0;
 }
+
+.checkboxes {
+    margin-top: 1rem;
+}
+
+.experience-label {
+    padding: 0;
+}
+
+
 
 #submit {
     padding: .5rem 2rem;
     margin: 1rem 0;
+    opacity: .7;
+    transition: opacity 250ms;
 }
 
 #submit:hover {
-    background-color: rgb(122, 122, 236);
+    opacity: 1;
 }
