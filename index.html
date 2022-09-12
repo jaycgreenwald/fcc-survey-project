@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" class="css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="title">
+            Volunteer Survey
+        </h1>
+        <p id="description">
+            Please fill out our volunteer survey in order to connect you with the ideal resource. All fields are required.
+        </p>
+        <form action="/" id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label">
+                    Please enter your name.
+                    <input type="text" name="name" id="name" placeholder="Type your first and last name here" required>
+                </label>
+                <label for="email" id="email-label">
+                    Please enter your email.
+                    <input type="email" name="email" id="email" placeholder="Type your primary email here" required>
+                </label>
+                <label for="number" id="number-label">
+                    How many days a week do you want to work?
+                    <input type="number" name="number" id="number" min=1 max=7 placeholder="1" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="department" class="dropdown">Choose which department you are interested in.
+                    <select name="department" id="dropdown">
+                        <option value="">Select a department</option>
+                        <option value="">Marketing</option>
+                        <option value="">Fundraising</option>
+                        <option value="">Operations</option>
+                        <option value="">IT</option>
+                    </select>
+                </label>
+                <label for="weekend-no">Are you available to work weekends?
+                    <input type="radio" name="weekend-no" id="radio">Not Available Weekends
+                    <input type="radio" name="weekend-no" id="radio">Available Weekends
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="">
+                    <input type="checkbox" name="" id="">Social media
+                    <input type="checkbox" name="" id="">Website
+                    <input type="checkbox" name="" id="">Accounting/Bookkeeping
+                    <input type="checkbox" name="" id="">Logistics
+                    <input type="checkbox" name="" id="">Oversight
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
