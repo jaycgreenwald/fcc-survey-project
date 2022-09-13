@@ -45,7 +45,8 @@ select {
 body {
     align-items: center;
     color: #f1f1f1;
-    background-image: url(/images/hero.jpg);
+    background-attachment: fixed;
+    background-image: url(images/hero.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
