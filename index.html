@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="styles.css" class="css">
 </head>
 <body>
-    <div class="wrapper">
+    <main class="wrapper">
         <h1 id="title">
             Volunteer Survey
         </h1>
@@ -29,8 +29,8 @@
                     <input type="email" name="email" id="email" placeholder="Type your primary email here" required>
                 </label>
                 <label for="number" id="number-label">
-                    How many days a week do you want to work?
-                    <input type="number" name="number" id="number" min=1 max=7 placeholder="1" required>
+                    How many days a week are you available?
+                    <input type="number" name="number" id="number" min=1 max=7 placeholder="Enter a number between 1 and 7" required>
                 </label>
             </fieldset>
             <fieldset>
@@ -62,11 +62,11 @@
                 </label>
                 <label for="experience" class="experience-label">Do you have experience in the following areas? (Check all that apply.)
                     <div class="checkboxes">
-                        <input type="checkbox" name="" id="experience">Social media
-                        <input type="checkbox" name="" id="experience">Website
-                        <input type="checkbox" name="" id="experience">Accounting/Bookkeeping
-                        <input type="checkbox" name="" id="experience">Logistics
-                        <input type="checkbox" name="" id="experience">Oversight
+                        <input type="checkbox" name="past-experience" id="experience" value="sm">Social media
+                        <input type="checkbox" name="past-experience" id="experience" value="web">Websites
+                        <input type="checkbox" name="past-experience" id="experience" value="acc">Accounting/Bookkeeping
+                        <input type="checkbox" name="past-experience" id="experience" value="log">Logistics
+                        <input type="checkbox" name="past-experience" id="experience" value="os">Oversight
                     </div>
                 </label>
             </fieldset>
@@ -77,6 +77,11 @@
             </fieldset>
             <input type="submit" value="Submit" id="submit">
         </form>
-    </div>
+    </main>
+    <footer>
+        <p class="credit">
+            Photo by <a href="https://unsplash.com/@hannahbusing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="links" target="_blank">Hannah Busing</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" class="links" target="_blank">Unsplash</a>
+        </p>
+    </footer>
 </body>
 </html>
